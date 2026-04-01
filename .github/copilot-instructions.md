@@ -74,8 +74,8 @@ Print this out or keep it in a `progress.md` file in your VSCode project.
 
 | Day | Topic | Status (✅/❌) | Key Takeaway |
 | :--- | :--- | :--- | :--- |
-| **1** | **Ownership** | [ ] | I know when to use `&` vs `&mut`. |
-| **1** | **Strings** | [ ] | I understand `String` vs `&str`. |
+| **1** | **Ownership** | ✅ | I know when to use `&` vs `&mut`. |
+| **1** | **Strings** | ✅ | I understand `String` vs `&str`. |
 | **2** | **Enums** | [ ] | I can use `match` for CDC operations. |
 | **2** | **Results** | [ ] | I can use `?` to handle S3/IO errors. |
 | **3** | **Async** | [ ] | I can use `tokio::spawn`. |
