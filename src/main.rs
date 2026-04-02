@@ -4,14 +4,16 @@ mod day2;
 use day1::*;
 use day2::*;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // day 1
     let greet = "Hello".to_string() + " world";
 
     the_borrow(&greet);
     the_borrow(&greet);
 
     the_move(greet);
-    // send_to_writer(greet);
+    // send_to_writer(greet);ßß
 
+    // day 2
     let mut iceberg_properties = std::collections::HashMap::new();
     mutable_mutation(&mut iceberg_properties);
     mutable_mutation(&mut iceberg_properties);
@@ -28,6 +30,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let fallback_version = "0.4.2".to_string();
     let olake_version = olake_version.unwrap_or(&fallback_version);
     println!("Olake version: {}", olake_version);
+    day2::connect_to_s3()?;
+
+    // day3 - refer to src/bin/day3.rs
 
     Ok(())
 }
