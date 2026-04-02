@@ -1,6 +1,8 @@
 mod day1;
 mod day2;
 
+use core::str;
+
 use day1::*;
 use day2::*;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -11,7 +13,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     the_borrow(&greet);
 
     the_move(greet);
-    // send_to_writer(greet);ßß
+    // send_to_writer(greet);
 
     // day 2
     let mut iceberg_properties = std::collections::HashMap::new();
