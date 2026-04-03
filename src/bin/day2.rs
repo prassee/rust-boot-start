@@ -1,5 +1,7 @@
+#[derive(Debug)]
 pub enum CdcOp {
     Insert(String),
+    Update(String),
     Delete(i64),
 }
 
@@ -12,6 +14,7 @@ fn main() {
 
     match cdc_op {
         CdcOp::Insert(data) => println!("Insert operation with data: {}", data),
+        CdcOp::Update(data) => println!("Update operation with data: {}", data),
         CdcOp::Delete(id) => println!("Delete operation with id: {}", id),
     }
 }
