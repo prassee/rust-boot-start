@@ -80,8 +80,8 @@ Print this out or keep it in a `progress.md` file in your VSCode project.
 | **2** | **Results** | ✅ | I can use `?` to handle S3/IO errors. |
 | **3** | **Async** | ✅ | I can use `tokio::spawn`. |
 | **3** | **Channels** | ✅ | I can move data between tasks safely. |
-| **4** | **Batching** | [ ] | I can collect records into a batch. |
-| **4** | **(T0) Mock** | [ ] | I can simulate a basic UDS logic. |
+| **4** | **Batching** | [x] | I can collect records into a batch. |
+| **4** | **(T0) Mock** | [x] | I can simulate a basic UDS logic. |
 
 ---
 

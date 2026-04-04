@@ -11,14 +11,14 @@ async fn main() {
     // make main thred sleep
     tokio::time::sleep(std::time::Duration::from_secs(5)).await;
     // 3.2
-    mpsc_example().await;
+    channel_run().await;
 
     // 3.3
     let s3_writer = S3Writer {};
     s3_writer.write().await;
 }
 
-async fn mpsc_example() {
+async fn channel_run() {
     let (tx, mut rx) = mpsc::channel(8);
     // send data in a separate task
     tokio::spawn(async move {
